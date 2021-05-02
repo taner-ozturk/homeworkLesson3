@@ -25,8 +25,6 @@ public class Main {
         instructor.getOtoNickName();
         System.out.println(instructor.getOtoNickName());
 
-
-
         UserManager userManager = new UserManager();
         userManager.List();
         StudentManager studentManager= new StudentManager();
@@ -34,9 +32,10 @@ public class Main {
         studentManager.HomeworkRemove();
         studentManager.HomeworkUpdate();
         InstructorManager instructorManager = new InstructorManager();
-        instructorManager.AddLesson();
-        instructorManager.RemoveLesson();
-        instructorManager.UpdateLesson();
+        instructorManager.AddLesson(instructor);
+        instructorManager.RemoveLesson(instructor);
+        instructorManager.UpdateLesson(instructor);
+        instructorManager.addTeacher(instructor);
     }
 
 }

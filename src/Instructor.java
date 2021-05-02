@@ -1,20 +1,21 @@
 public class Instructor extends User {
 
+    private String giveLesson;
+    private String identityNumber;
+    private String name;
+    private String lastName;
+
+    public Instructor() {
+    }
+
     public Instructor(int id, String identityNumber, String name, String lastName, String email, String giveLesson) {
         super(id, email);
-        this.giveLesson=giveLesson;
+        this.giveLesson = giveLesson;
         this.identityNumber = identityNumber;
         this.name = name;
         this.lastName = lastName;
     }
 
-    public Instructor() {
-    }
-
-    private String giveLesson;
-    private String identityNumber;
-    private String name;
-    private String lastName;
 
     public String getIdentityNumber() {
 

@@ -1,5 +1,13 @@
 public class Student extends User {
 
+    private String takeLesson;
+    private String identityNumber;
+    private String name;
+    private String lastName;
+
+    public Student() {
+    }
+
     public Student(int id, String identityNumber, String name, String lastName, String email, String takeLesson) {
         super(id, email);
         this.takeLesson = takeLesson;
@@ -7,14 +15,6 @@ public class Student extends User {
         this.name = name;
         this.lastName = lastName;
     }
-
-    public Student() {
-    }
-
-    private String takeLesson;
-    private String identityNumber;
-    private String name;
-    private String lastName;
 
     public String getIdentityNumber() {
 

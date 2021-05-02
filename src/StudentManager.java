@@ -1,11 +1,13 @@
 public class StudentManager extends UserManager {
-    public void HomeworkAdd(){
+    public void HomeworkAdd() {
         System.out.println("Homework Added");
     }
-    public void HomeworkRemove(){
+
+    public void HomeworkRemove() {
         System.out.println("Homework Remove");
     }
-    public void HomeworkUpdate(){
+
+    public void HomeworkUpdate() {
         System.out.println("Homework Update");
     }
 }

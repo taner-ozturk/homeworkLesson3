@@ -1,5 +1,5 @@
 public class UserManager {
-    public void List(){
+    public void List() {
         System.out.println("List course");
     }
 }

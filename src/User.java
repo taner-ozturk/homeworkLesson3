@@ -1,6 +1,5 @@
 import java.util.Locale;
 
-
 public class User {
     private int id;
     private String email;
@@ -32,6 +31,6 @@ public class User {
     }
 
     public String getOtoNickName() {
-        return this.id + email.toUpperCase(Locale.ROOT).substring(0, 3);
+        return this.id + email.toUpperCase(Locale.ROOT).substring(0, 2);
     }
 }
